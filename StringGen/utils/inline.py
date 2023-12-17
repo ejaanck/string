@@ -6,12 +6,6 @@ from config import SUPPORT_CHAT
 keyboard = InlineKeyboardMarkup(
     [
         [InlineKeyboardButton(text="ʙᴜᴀᴛ sᴛʀɪɴɢ", callback_data="gensession")],
-        [
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=SUPPORT_CHAT),
-            InlineKeyboardButton(
-                text="sᴛᴏʀᴇ", url="https://t.me/Arabc0de/2"
-            ),
-        ],
     ]
 )
 
