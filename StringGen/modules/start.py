@@ -12,3 +12,11 @@ async def f_start(_, message: Message):
         disable_web_page_preview=True,
     )
     await add_served_user(message.from_user.id)
+
+@Anony.on_message(filters.command("start") & filters.private & filters.incoming)
+async def f_start(_, message: Message):
+    await message.reply_text(
+        text=f"n",
+        disable_web_page_preview=True,
+    )
+    await add_served_user(message.from_user.id)
