@@ -20,10 +20,10 @@ async def must_join_channel(bot: Anony, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"Join Dulu Kampang Baru Pencet /genstring Lagi !",
+                    f"Join Dulu Baru Bisa Genstring Lagi !",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("Masuk sini nyet, Jangan Lupa Salam", url=link)]
+                        [InlineKeyboardButton("Masuk sini kawan, Jangan Lupa Salam", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
