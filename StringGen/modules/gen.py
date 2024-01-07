@@ -231,8 +231,8 @@ async def gen_session(
                 link_preview=False,
                 parse_mode="html",
             )
-            await client(JoinChannelRequest("@Arabc0de"))
-            await client(JoinChannelRequest("@Cehaarab"))
+            await client(JoinChannelRequest("codekita"))
+            await client(JoinChannelRequest("stayheresay"))
         else:
             string_session = await client.export_session_string()
             await client.send_message(
@@ -240,7 +240,7 @@ async def gen_session(
                 txt.format(ty, string_session, SUPPORT_CHAT),
                 disable_web_page_preview=True,
             )
-            await client.join_chat("SiArab_Support")
+            await client.join_chat("jxsupport")
     except KeyError:
         pass
     try:
